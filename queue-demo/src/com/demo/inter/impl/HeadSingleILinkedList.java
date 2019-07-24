@@ -29,8 +29,9 @@ public class HeadSingleILinkedList<T> implements ILinkedList<T> {
             System.out.println("this.headNode.hashCode() = " + this.headNode.hashCode());
             System.out.println("this.rear.hashCode() = " + this.rear.hashCode());
             this.headNode.next = new Node<>(arr[0]);
+            System.out.println("this.headNode.hashCode() = " + this.headNode.hashCode());
             rear = this.headNode.next;
-            System.out.println("arr = " + rear.hashCode());
+            System.out.println("this.rear.hashCode() = " + this.rear.hashCode());
             int i = 1;
             while (i < arr.length) {
                 rear.next = new Node<>(arr[i++]);
